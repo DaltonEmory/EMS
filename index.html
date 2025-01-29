@@ -62,13 +62,14 @@
             color: #fff;
         }
         .hero {
-            background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.9)), url('./images/Hero.jpeg') no-repeat center center/cover;
+            background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.8)), url('./images/hero.jpeg') no-repeat center center/cover;
             height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             text-align: center;
+            filter: brightness(85%) saturate(90%);
         }
         .hero h2 {
             font-size: 3rem;
@@ -118,6 +119,13 @@
             transition: transform 0.3s;
         }
         .services .card img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 180px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             display: block;
             margin: 0 auto;
             width: 90%;

@@ -109,7 +109,28 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        .services .card {
+        .services .card:nth-child(1) {
+            background-image: url('images/machine.jpeg');
+            filter: brightness(85%) contrast(110%) saturate(90%);
+            background-image: url('images/machine.jpeg');
+        }
+        .services .card:nth-child(2) {
+            background-image: url('images/fluxCore.jpeg');
+            filter: brightness(85%) contrast(110%) saturate(90%);
+            background-image: url('images/fluxCore.jpeg');
+        }
+        .services .card:nth-child(3) {
+            background-image: url('images/laserCut.jpeg');
+            filter: brightness(85%) contrast(110%) saturate(90%);
+            background-image: url('images/laserCut.jpeg');
+        }
+        .services .card:nth-child(4) {
+            background-image: url('images/caliper.jpeg');
+            filter: brightness(85%) contrast(110%) saturate(90%);
+            background-image: url('images/caliper.jpeg');
+            background-image: url('images/laserCut.jpeg');
+            background-image: url('images/fluxCore.jpeg');
+            background-image: url('images/machine.jpeg');
             background: #333;
             padding: 2rem;
             border: 1px solid #444;
@@ -118,32 +139,6 @@
             transition: transform 0.3s;
             background-size: cover;
             background-position: center;
-        }
-        .services .card:nth-child(1) {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/1.jpeg');
-        }
-        .services .card:nth-child(2) {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/2.jpeg');
-        }
-        .services .card:nth-child(3) {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/3.jpeg');
-        }
-        .services .card:nth-child(4) {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/Logo.jpeg');
-        }
-        .services .card h4 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-            color: #b9a03c;
-        }
-        .services .card p {
-            font-size: 1rem;
-            color: #ddd;
-        }
-        .services .card:hover {
-            transform: translateY(-5px);
-            background: #444;
         }
         .about {
             padding: 3rem 2rem;
@@ -156,58 +151,6 @@
             margin-bottom: 2rem;
             font-weight: 700;
         }
-        .about .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-        .about .card {
-            background: #333;
-            padding: 2rem;
-            border: 1px solid #444;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            text-align: left;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .about .centered {
-            background: #333;
-            padding: 2rem;
-            border: 1px solid #444;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            text-align: center;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .about .centered strong {
-            font-size: 2rem;
-            color: #b9a03c;
-            margin-bottom: 1rem;
-        }
-        .about .card:hover, .about .centered:hover {
-            transform: scale(1.03);
-            background: #444;
-        }
-        .about .card p, .about .centered p {
-            font-size: 1rem;
-            color: #bbb;
-            margin-bottom: 1rem;
-        }
-        .about .card h4 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-            color: #b9a03c;
-        }
         .contact {
             padding: 3rem 2rem;
             text-align: center;
@@ -218,62 +161,18 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contact form input,
-        .contact form textarea,
-        .contact form button {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #444;
-            border-radius: 10px;
-            font-size: 1rem;
-            background: #333;
-            color: #fff;
-        }
-        .contact form button {
-            background: #b9a03c;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        .contact form button:hover {
-            background: #a8922f;
-        }
         footer {
             background: #111;
             color: #fff;
             text-align: center;
             padding: 1.5rem;
         }
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        footer .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        footer .social-icons a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        footer .social-icons a:hover {
-            color: #b9a03c;
-        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="./images/EMS_Logo.png" alt="EMS Logo">
+            <img src="./images/logo.jpg" alt="EMS Logo">
             <h1>EMS Emergency Machine Services</h1>
         </div>
         <nav>
@@ -285,72 +184,9 @@
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <div>
-            <h2>Precision. Innovation. Excellence.</h2>
-            <p>Your trusted partner for machining, metal fabrication, and maintenance solutions.</p>
-            <button>Explore Our Services</button>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h3>Our Expertise</h3>
-        <div class="grid">
-            <div class="card">
-                <h4>Machining</h4>
-                <p>Precision machining tailored to meet your specific requirements.</p>
-            </div>
-            <div class="card">
-                <h4>Metal Fabrication & Design</h4>
-                <p>Expertly crafted and designed metal components for all industries.</p>
-            </div>
-            <div class="card">
-                <h4>Maintenance</h4>
-                <p>Comprehensive maintenance services to ensure smooth operations.</p>
-            </div>
-            <div class="card">
-                <h4>Process Evaluation</h4>
-                <p>In-depth analysis to optimize your manufacturing processes.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <h3>About Us</h3>
-        <div class="grid">
-            <div class="card">
-                <h4>Our Services</h4>
-                <p>We are a full-service welding, machining, and fabrication shop based in Gainesville, Georgia. Broken equipment can cause costly delays. That’s why we provide 24/7 emergency services, ensuring your operations are back up and running swiftly.</p>
-                <p>Our highly skilled team of emergency machinists and metal fabrication experts specializes in delivering quick and reliable solutions, including machine part replacements and custom metal fabrication services.</p>
-            </div>
-            <div class="centered">
-                <strong>24/7 Emergency Services</strong>
-                <p><strong>Available 24 hours, 7 days a week</strong></p>
-                <p>Call us at <strong>(404) 983-4679</strong> for immediate assistance.</p>
-                <em>Proudly veteran-owned and veteran-employed.</em>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h3>Contact Us</h3>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="phone" placeholder="Your Phone Number">
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
     <footer>
         <p>© 2025 EMS Emergency Machine Services. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
     </footer>
 </body>
 </html>
+

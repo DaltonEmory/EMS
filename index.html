@@ -116,21 +116,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
-            background-size: cover;
-            background-position: center;
-            filter: brightness(85%) contrast(110%) saturate(90%);
         }
-        .services .card:nth-child(1) {
-            background-image: url('images/machine.jpeg');
-        }
-        .services .card:nth-child(2) {
-            background-image: url('images/fluxCore.jpeg');
-        }
-        .services .card:nth-child(3) {
-            background-image: url('images/laserCut.jpeg');
-        }
-        .services .card:nth-child(4) {
-            background-image: url('images/caliper.jpeg');
+        .services .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         .services .card:hover {
             transform: translateY(-5px);
@@ -192,18 +184,22 @@
         <h3>Our Expertise</h3>
         <div class="grid">
             <div class="card">
+                <img src="images/machine.jpeg" alt="Machining">
                 <h4>Machining</h4>
                 <p>Precision machining tailored to meet your specific requirements.</p>
             </div>
             <div class="card">
+                <img src="images/fluxCore.jpeg" alt="Metal Fabrication & Design">
                 <h4>Metal Fabrication & Design</h4>
                 <p>Expertly crafted and designed metal components for all industries.</p>
             </div>
             <div class="card">
+                <img src="images/laserCut.jpeg" alt="Maintenance">
                 <h4>Maintenance</h4>
                 <p>Comprehensive maintenance services to ensure smooth operations.</p>
             </div>
             <div class="card">
+                <img src="images/caliper.jpeg" alt="Process Evaluation">
                 <h4>Process Evaluation</h4>
                 <p>In-depth analysis to optimize your manufacturing processes.</p>
             </div>
